@@ -1,0 +1,111 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            font-size: medium;
+            color: #FF0000;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #FFFFCC;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style4 {
+            font-size: large;
+            text-align: center;
+        }
+        </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Pagewraper">
+        <div id="header">
+            <h1 class="auto-style2"> FERHAT 28 SPOT</h1>
+            <p class="auto-style2"> &nbsp;</p>
+            <p class="auto-style2"> \</p>
+        </div>
+        <div id="Menuwraper">
+            <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="10px" CssClass="MainMenu">
+                <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#FFFBD6" />
+                <DynamicSelectedStyle BackColor="#FFCC66" />
+                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#FFCC66" />
+            </asp:Menu>
+        </div>
+        <div id="Sitemap"> 
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <div id="leftsidebar">Left Side<asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Width="144px">
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+            </div>
+        <div id="Maincontent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;<span class="auto-style4" lang="tr"><em>ferhat 28 Spot ticaret ve terimlerin olasılığı ve buzdolabı, mobilya, büro masası, masa, ekmek, ürün makinesi, elektrikli süpürge, masa, çizme dahil sunmak için iyi şeyler, alanında Hala daha fazla adım, çizme servis gününü</em></span></p>
+<p class="auto-style4">
+        <em>Ferhat 28 Spot bozuk bozdolabı onarım yapıorlar.</em></p>
+                <p class="auto-style3">
+                    2 EL BEYAZ EŞYA TELEVIZYON ALINIR-SATILIR TÜM BEYAZ EŞYAARIMIZ 1 YIL SERVİSİMİZCE GARANTILİDİR </p>
+                <p class="auto-style4">
+                    Tamirat Electrikli cihazların her türlü bakım</p>
+                <p class="auto-style3">
+                    Arçelik-Bosch-Beko-SIMENS-AGE-ARİSTON-PROFİLO-VISTEL-GRONJE-INDEİST-SAMSUNG-ALTUS-KLİMA-KOMBİ-SÜPÜRGE</p>
+                <p class="auto-style3">
+                    TAMİRAT BKIMONARIM</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="RightSideBar">Right Side bar</div>
+        <div id="Footer" class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style1"><strong>Adres: Mehterçeşme Mahç1953 Sk.No:83 Esenyurt/Istanbul<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CepTelefonu:05366746513-02128526991</strong></span></div>
+        
+    </div>
+    </form>
+</body>
+</html>
